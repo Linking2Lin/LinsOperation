@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
         binding.write.setOnClickListener {
             ioScope.launch {
                 LinsFileOperation.write(Environment.getExternalStoragePublicDirectory("").toString(),"a.json",tempOb)
+
             }
         }
     }
