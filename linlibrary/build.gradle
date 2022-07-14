@@ -2,8 +2,10 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
-}
+    id 'maven-publish'
 
+}
+apply from: 'maven-aar.gradle'
 android {
     namespace 'com.linkin.rwlibrary'
     compileSdk 32
